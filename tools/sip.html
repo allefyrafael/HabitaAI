@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html class="no-js" lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ferramentas - Habita AI</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      href="../assets/images/favicon.ico"
+      type="image/png"
+      />
+    <link rel="stylesheet" href="../assets/css/animate.css" />
+    <link rel="stylesheet" href="../assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="../assets/css/slick.css" />
+    <link rel="stylesheet" href="../assets/css/LineIcons.css" />
+    <link rel="stylesheet" href="../assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/default.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/quiz.css" />
+    <link rel="stylesheet" href="../assets/css/popup.css" />
+    <link rel="stylesheet" type="text/css" href="sipcalculatorCss.css">
+    <style>
+      #progressBar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 8px;
+        background-color: #f76b45;
+        z-index: 9999;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div id="progressBar"></div>
+    <script>
+      window.onscroll = function () {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("progressBar").style.width = scrolled + "%";
+      };
+    </script>
+    <div class="preloader">
+      <div class="loader">
+        <div class="ytp-spinner">
+          <div class="ytp-spinner-container">
+            <div class="ytp-spinner-rotator">
+              <div class="ytp-spinner-left">
+                <div class="ytp-spinner-circle"></div>
+              </div>
+              <div class="ytp-spinner-right">
+                <div class="ytp-spinner-circle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header-area">
+      <div class="navbar-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <nav class="navbar navbar-expand-lg">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                  >
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+                </button>
+                <div class="div-imagem"><img class="imagem" src="../assets/images/Habita_AI_-_Logo-removebg-preview.png" alt=""></div>
+              <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                <div>
+                  <img class="imagem-pequena" src="../assets/images/Habita_AI_-_Logo-removebg-preview.png" alt="">
+                  
+                </div>
+                  <!-- Itens do Menu -->
+                <ul id="nav" class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="page-scroll" href="../index.html">Home 🏡</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="page-scroll" href="../trends.html" >Mercado 📈</a>
+                  </li>
+                  <li  class="nav-item active">
+                    <a class="page-scroll" href="./tools/sip.html"  id="active-page">Ferramentas 🔧</a>
+                  </li>
+                </ul>
+              </div>
+          </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="home"
+        class="header-hero bg_cover"
+        style="background-image: url(../assets/images/banner-bg.svg)"
+        >
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="header-hero-content text-center">
+                <h3
+                class="header-sub-title wow fadeInUp"
+                data-wow-duration="1.3s"
+                data-wow-delay="0.2s"
+                >
+                Habita <span  style="color: #f76b45; font-weight: bold;">AI</span>
+              </h3>
+              <h2
+                class="header-title wow fadeInUp"
+                data-wow-duration="1.3s"
+                data-wow-delay="0.5s"
+                >
+"A melhor escolha para quem vê o amanhã"
+              </h2>
+              <p
+                class="text wow fadeInUp"
+                data-wow-duration="1.3s"
+                data-wow-delay="0.8s"
+                >
+            Bem vindo a sua plataforma de previsão de imóveis, aqui será possível visualizar o valor justo do seu imóvel. Venha conosco e faça parte dessa também!
+              </p>
+              
+            </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <div
+                class="header-hero-image text-center wow fadeIn"
+                data-wow-duration="1.3s"
+                data-wow-delay="1.4s"
+                >
+                <img src="../assets/images/web-scrapping.gif" alt="hero" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="particles-1" class="particles"></div>
+      </div>
+    </header>
+    <link rel="stylesheet" type="text/css" href="sipcalculatorCss.css">
+    <script type="text/javascript" src="sipcalculatorJs.js"></script>
+    <body class="body-background">
+      <div class="header mt-5">
+        <h3>Previsão dos imóveis</h3>
+      </div>
+      <div class="page-container shadow p-5 mb-5 bg-white rounded mt-5">
+        <div class="switch-container radio-button">          
+          <div class="dropdown">
+            Moeda
+            <select class="form-control" onchange="currencyChange(this)" id="currency" class="currency" value="real">
+              <!-- &#8377; -->
+              <option value="real">Real</option>
+              <option value="dollar">USD</option>
+              <!-- &#x24; -->
+            </select>
+          </div>
+        </div>
+        <div class="input-container">
+          <div >
+            <div><b>Área m<sup>2</sup></b></div>
+            <div><input class="form-control-number" id="area" type="number" value="0" min="1"/></div>
+            <br/>
+            <div><b>Número de quartos</b></div>
+            <div><input class="form-control-number" id="rooms" type="number" max="5" min="1" value="0"></div>
+            <br/>
+            <div><b>Número de banheiros</b></div>
+            <div><input class="form-control-number" id="bathrooms" type="number" max="5" min="1" value="0"></div>
+            <br/>
+            <div><b>Localização</b></div>
+            <div>
+              <select class="form-control" id="location">
+                <option value="1st block jayanagar">Zona Sul</option>
+                <option value="1st phase jp nagar">Zona Oeste</option>
+                <option value="2nd phase judicial layout">Zona Norte</option>
+                <option value="2nd stage nagarbhavi">Zona Leste</option>                                
+              </select>
+            </div>
+          </div>
+        </div>
+        </br/>
+        <div class="btn-calculate">
+          <button type="button" onclick="handlePredict()" class="btn btn-success">
+          Calcular
+          </button>
+        </div>
+        <div id="response" style="margin:auto;justify-content: center; align-items: center; align-content: center; margin-top: 20px;">        
+        </div>  
+      </div>
+             
+    </div>
+  </div>
+</div>
+     
+
+  </body>
+  <footer id="footer" class="footer-area pt-120">
+    <div class="container">
+      <div
+        class="subscribe-area wow fadeIn"
+        data-wow-duration="1s"
+        data-wow-delay="0.5s"
+        >
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="subscribe-content mt-45">
+              <h2 class="subscribe-title">
+                Inscreva-Se <span>para mais novidades</span>
+               </h2>
+             </div>
+           </div>
+           <div class="col-lg-6">
+             <div class="subscribe-form mt-50">
+               <form action="#">
+                 <input type="text" placeholder="Insira o Email" />
+                 <button class="main-btn" onclick="event.preventDefault(); openModal();">Enviar</button>
+               </form>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div class="footer-widget pb-100">
+         <div class="row">
+           <div class="col-lg-4 col-md-6 col-sm-8">
+             <div
+               class="footer-about mt-50 wow fadeIn"
+               data-wow-duration="1s"
+               data-wow-delay="0.2s"
+               >
+               <p class="text">
+Qualquer dado ou informação retirado ou utilizado do site contém total valor comercial da Tech To You
+               </p>
+             </div>
+           </div>
+           <div class="col-lg-5 col-md-7 col-sm-7">
+             <div class="footer-link d-flex mt-50 justify-content-md-between">
+               <div
+                 class="link-wrapper wow fadeIn"
+                 data-wow-duration="1s"
+                 data-wow-delay="0.4s"
+                 >
+                 
+               
+               </div>
+           
+             </div>
+           </div>
+           <div class="col-lg-3 col-md-5 col-sm-5">
+             <div
+               class="footer-contact mt-50 wow fadeIn"
+               data-wow-duration="1s"
+               data-wow-delay="0.8s"
+               >
+               <div class="footer-title">
+                 <h4 class="title">Contacte</h4>
+               </div>
+               <ul class="contact">
+                 <li>techtoyou.dev@gmail.com</li>
+                 <li>
+                  Brasilia , Brasil
+                 </li>
+               </ul>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div class="footer-copyright">
+         <div class="row">
+           <div class="col-lg-12">
+             <div class="copyright d-sm-flex justify-content-between">
+               <div class="copyright-content">
+                 <p class="text">
+                   © <span id="copyright-year"></span> Tech To You. Todos os direitos reservados.
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="particles-2"></div>
+  </footer>
+  <a href="#" class="back-to-top"><i class="lni-chevron-up"></i></a>
+  <script src="https://unpkg.com/axios/dist/axios.min.js">
+  </script>  
+  <script src="../assets/js/vendor/jquery-1.12.4.min.js"></script>
+  <script src="../assets/js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="../assets/js/popper.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/plugins.js"></script>
+  <script src="../assets/js/slick.min.js"></script>
+  <script src="../assets/js/ajax-contact.js"></script>
+  <script src="../assets/js/waypoints.min.js"></script>
+  <script src="../assets/js/jquery.counterup.min.js"></script>
+  <script src="../assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="../assets/js/jquery.easing.min.js"></script>
+  <script src="../assets/js/scrolling-nav.js"></script>
+  <script src="../assets/js/wow.min.js"></script>
+  <script src="../assets/js/particles.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/popup.js"></script>
+  <script>
+    // Get the modals
+    var loginModal = document.getElementById('myModal');
+    var registerModal = document.getElementById('registerModal');
+  
+    // Get the button that opens the login modal
+    var loginBtn = document.getElementById('loginBtn');
+  
+    // Get the links that open the register and login modals
+    var registerLink = document.getElementById('registerLink');
+    var loginLink = document.getElementById('loginLink');
+  
+    // Get the <span> elements that close the modals
+    var closeBtns = document.getElementsByClassName('close');
+  
+  
+    // When the user clicks the register link, open the register modal
+    registerLink.onclick = function(event) {
+      event.preventDefault();
+      loginModal.style.display = 'none';
+      registerModal.style.display = 'block';
+    }
+  
+    // When the user clicks the login link, open the login modal
+    loginLink.onclick = function(event) {
+      event.preventDefault();
+      registerModal.style.display = 'none';
+      loginModal.style.display = 'block';
+    }
+  
+    // When the user clicks on <span> (x), close the modal
+    for (var i = 0; i < closeBtns.length; i++) {
+      closeBtns[i].onclick = function() {
+        loginModal.style.display = 'none';
+        registerModal.style.display = 'none';
+      }
+    }
+  
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == loginModal) {
+        loginModal.style.display = 'none';
+      }
+      if (event.target == registerModal) {
+        registerModal.style.display = 'none';
+      }
+    }
+  </script>
+  <script src="./smoothScroll.js"></script>
+  </body>
+</html>
